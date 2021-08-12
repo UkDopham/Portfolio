@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react';
+import { Typography, Box } from '@material-ui/core';
+import { Title } from '../title/title';
 
 export const About = () => {
 
   return (
-    <main>
-      About
-    </main>
+    <Box>
+      <Title/>
+    </Box>
   );
 }
