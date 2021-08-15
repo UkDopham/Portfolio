@@ -4,6 +4,7 @@ import { enTranslation } from './translation.english';
 
 export interface Translation {
   title : string;
+  subtitle : string; 
 }
 
 export const getTranslation = (language:Language,) => {

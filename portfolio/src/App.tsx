@@ -18,9 +18,13 @@ export const App = () => {
   const [styles, setStyles] = React.useState<Style>(Style.normal);
   const [language, setLanguage] = React.useState<Language>(Language.french);
 
+  const onClickLanguage = (language:Language) => {
+    setLanguage(language);
+  }
+
   return (
     <div>
-      <Options />
+      <Options onClickLanguage={onClickLanguage}/>
 
       <div style={{
         height:'90vh',

@@ -1,7 +1,9 @@
 import React from 'react';
-import { ButtonStyled, DivStyled } from './options.styles';
+import { ButtonStyled, DivStyled,LanguageImgStyled } from './options.styles';
+import {Language} from '../../App';
 
 type Props = {
+    onClickLanguage: (language:Language) => void;
 }
 export const Options = (props: Props) => {
 
@@ -14,12 +16,12 @@ export const Options = (props: Props) => {
                 Pixel
             </ButtonStyled>
 
-            <ButtonStyled>
-                French
+            <ButtonStyled onClick={() => props.onClickLanguage(Language.french)}>
+                <LanguageImgStyled src={'./france.png'}/>
             </ButtonStyled>
 
-            <ButtonStyled>
-                English
+            <ButtonStyled onClick={() => props.onClickLanguage(Language.english)}>
+                <LanguageImgStyled src={'./united-kingdom.png'}/>
             </ButtonStyled>
         </DivStyled>
     );
