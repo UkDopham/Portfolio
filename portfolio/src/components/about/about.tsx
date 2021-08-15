@@ -1,12 +1,18 @@
 import React from 'react';
-import { Typography, Box } from '@material-ui/core';
 import { Title } from '../title/title';
+import {Language} from '../../App';
+import {getTranslation} from '../../utils/translation/translation';
 
-export const About = () => {
+type Props = {
+  language: Language
+}
+
+export const About = (props: Props) => {
+  const language = props.language;
 
   return (
-    <Box>
-      <Title/>
-    </Box>
+    <div>
+      <Title title={getTranslation(language).title}/>
+    </div>
   );
 }
