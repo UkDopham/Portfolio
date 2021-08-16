@@ -1,28 +1,37 @@
 import React from 'react';
-import { ButtonStyled, DivStyled,LanguageImgStyled } from './options.styles';
-import {Language} from '../../App';
+import { useStyles } from './options.styles';
+import { Language } from '../../App';
+import { Button,Avatar } from '@material-ui/core';
 
 type Props = {
-    onClickLanguage: (language:Language) => void;
+    onClickLanguage: (language: Language) => void;
 }
+
 export const Options = (props: Props) => {
+    const classes = useStyles();
 
     return (
-        <DivStyled >
-            <ButtonStyled>
+        <div >
+            <Button className={classes.StyleButton}>
                 Normal
-            </ButtonStyled>
-            <ButtonStyled>
+            </Button>
+            <Button className={classes.StyleButton}>
                 Pixel
-            </ButtonStyled>
+            </Button>
 
-            <ButtonStyled onClick={() => props.onClickLanguage(Language.french)}>
-                <LanguageImgStyled src={'./france.png'}/>
-            </ButtonStyled>
+            <Button
+                onClick={() => props.onClickLanguage(Language.french)}
+                className={classes.LanguageButton}
+            >
+                <Avatar src={'./france.png'} />
+            </Button>
 
-            <ButtonStyled onClick={() => props.onClickLanguage(Language.english)}>
-                <LanguageImgStyled src={'./united-kingdom.png'}/>
-            </ButtonStyled>
-        </DivStyled>
+            <Button
+                onClick={() => props.onClickLanguage(Language.english)}
+                className={classes.LanguageButton}
+            >
+                <Avatar src={'./united-kingdom.png'}/>
+            </Button>
+        </div>
     );
 }

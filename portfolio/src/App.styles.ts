@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import { makeStyles } from '@material-ui/core/styles';
 
-// Create a Wrapper component that'll render a <section> tag with some styles
-export const WrapperStyled = styled.section`
-  padding: 4em;
-`;
+export const useStyles = makeStyles({
+  StyleButton: {
+  },
+});
