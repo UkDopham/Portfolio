@@ -4,6 +4,7 @@ import { About } from "./components/about/about";
 import { Contact } from "./components/contact/contact";
 import { Project } from "./components/project/project";
 import { useStyles } from "./App.styles";
+import { Box } from "@material-ui/core";
 
 export enum Style {
   normal,
@@ -22,18 +23,23 @@ export const App = () => {
   const onClickLanguage = (language:Language) => {
     setLanguage(language);
   }
+  const onClickStyle = (style:Style) => {
+    setStyles(style);
+  }
 
   return (
-    <div>
-      <Options onClickLanguage={onClickLanguage}/>
+    <Box>
+      <Options onClickLanguage={onClickLanguage}
+      onClickStyle={onClickStyle}
+      language={language}/>
 
-      <div style={{
+      <Box style={{
         height:'70vh',
         overflow: 'scroll'}}>
           <About language={language}/>
           <Contact />
           <Project />
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

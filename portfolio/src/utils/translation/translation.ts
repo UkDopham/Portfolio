@@ -3,8 +3,14 @@ import { frTranslation } from './translation.french';
 import { enTranslation } from './translation.english';
 
 export interface Translation {
-  title : string;
-  subtitle : string; 
+  buttons:{
+    normal : string;
+    pixel:string;
+  };
+  about:{
+    title : string;
+    subtitle : string; 
+  }
 }
 
 export const getTranslation = (language:Language,) => {

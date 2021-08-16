@@ -1,22 +1,28 @@
 import React from 'react';
 import { useStyles } from './options.styles';
-import { Language } from '../../App';
-import { Button,Avatar } from '@material-ui/core';
+import { Language, Style } from '../../App';
+import { Button, Avatar, Box } from '@material-ui/core';
+import { getTranslation } from '../../utils/translation/translation';
 
 type Props = {
     onClickLanguage: (language: Language) => void;
+    onClickStyle: (style: Style) => void;
+    language:Language
 }
 
 export const Options = (props: Props) => {
     const classes = useStyles();
+    const language = props.language;
 
     return (
-        <div >
-            <Button className={classes.StyleButton}>
-                Normal
+        <Box className={classes.Box}>
+            <Button onClick={() => props.onClickStyle(Style.normal)}
+                className={classes.StyleButton}>
+                {getTranslation(language).buttons.normal}
             </Button>
-            <Button className={classes.StyleButton}>
-                Pixel
+            <Button onClick={() => props.onClickStyle(Style.normal)}
+                className={classes.StyleButton}>
+                {getTranslation(language).buttons.pixel}
             </Button>
 
             <Button
@@ -30,8 +36,8 @@ export const Options = (props: Props) => {
                 onClick={() => props.onClickLanguage(Language.english)}
                 className={classes.LanguageButton}
             >
-                <Avatar src={'./united-kingdom.png'}/>
+                <Avatar src={'./united-kingdom.png'} />
             </Button>
-        </div>
+        </Box>
     );
 }

@@ -15,8 +15,8 @@ export const About = (props: Props) => {
 
   return (
     <Box className={classes.box}>
-      <Title title={getTranslation(language).title}
-        subtitle={getTranslation(language).subtitle} />
+      <Title title={getTranslation(language).about.title}
+        subtitle={getTranslation(language).about.subtitle} />
 
       <Avatar src={'hiking.jpg'} className={classes.avatar}/>
     </Box>
