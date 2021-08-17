@@ -1,6 +1,10 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { Style} from './App';
 
-export const useStyles = makeStyles({
-  StyleButton: {
-  },
-});
+export const useStyles = makeStyles<Style>(style =>
+  createStyles({
+    StyleButton: {
+    },
+  })
+);
+

@@ -18,7 +18,7 @@ export enum Language {
 export const App = () => {
   const [styles, setStyles] = React.useState<Style>(Style.normal);
   const [language, setLanguage] = React.useState<Language>(Language.french);
-  const classes = useStyles();
+  const classes = useStyles(styles);
 
   const onClickLanguage = (language:Language) => {
     setLanguage(language);
@@ -36,7 +36,7 @@ export const App = () => {
       <Box style={{
         height:'70vh',
         overflow: 'scroll'}}>
-          <About language={language}/>
+          <About language={language} style={styles}/>
           <Contact />
           <Project />
       </Box>

@@ -2,27 +2,25 @@ import React from 'react';
 import { useStyles } from './options.styles';
 import { Language, Style } from '../../App';
 import { Button, Avatar, Box } from '@material-ui/core';
-import { getTranslation } from '../../utils/translation/translation';
 
 type Props = {
     onClickLanguage: (language: Language) => void;
     onClickStyle: (style: Style) => void;
-    language:Language
+    language:Language;
 }
 
 export const Options = (props: Props) => {
     const classes = useStyles();
-    const language = props.language;
 
     return (
-        <Box className={classes.Box}>
+        <Box className={classes.Box} >
             <Button onClick={() => props.onClickStyle(Style.normal)}
                 className={classes.StyleButton}>
-                {getTranslation(language).buttons.normal}
+                <Avatar src={'./empty.png'} />
             </Button>
-            <Button onClick={() => props.onClickStyle(Style.normal)}
+            <Button onClick={() => props.onClickStyle(Style.pixel)}
                 className={classes.StyleButton}>
-                {getTranslation(language).buttons.pixel}
+                <Avatar src={'./alien-pixelated-shape-of-a-digital-game.png'} />
             </Button>
 
             <Button

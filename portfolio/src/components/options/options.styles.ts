@@ -4,7 +4,7 @@ export const useStyles = makeStyles({
   Box:{
     display:'flex',
     flexDirection:'row-reverse',
-    backgroundColor:'#e5e5e5',
+    backgroundColor:'#f2f2f2',
   },
   StyleButton: {
     width:'10%',
