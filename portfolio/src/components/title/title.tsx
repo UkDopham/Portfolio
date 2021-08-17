@@ -13,11 +13,11 @@ export const Title = (props: Props) => {
 
   return (
     <div>
-      <Typography variant="h2" className={classes.title}>
+      <Typography className={classes.title}>
         {props.title}
       </Typography>
 
-      <Typography variant="h4" className={classes.subtitle}>
+      <Typography className={classes.subtitle}>
         {props.subtitle}
       </Typography>
 

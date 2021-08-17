@@ -8,5 +8,9 @@ export const enTranslation: Translation = {
     about:{
         title: 'Full-Stack Developer',
         subtitle : 'Alexandre DO PHAM\'s Portfolio.'
-    }
+    },
+    suboptions:{
+        link:'Here my linkedin profil',
+        message:'if you want to know more about me.',
+      }
 }

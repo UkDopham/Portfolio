@@ -10,6 +10,10 @@ export interface Translation {
   about:{
     title : string;
     subtitle : string; 
+  },
+  suboptions:{
+    link:string;
+    message:string;
   }
 }
 

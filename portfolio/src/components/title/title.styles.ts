@@ -11,11 +11,13 @@ export const useStyles = makeStyles<Theme, StyleProps>(theme => //cursive
 ({
   title: {
     textAlign: 'center',
-    fontFamily: ({style}) => getStyle(style).about.titleFontFamily,
+    fontFamily: ({style}) => getStyle(style).about.title.fontFamily,
+    fontWeight:'bold',
+    fontSize: ({style}) => getStyle(style).about.title.fontSize,
   },
   subtitle: {
-    fontFamily: 'system-ui',
-    fontWeight: 'lighter',
+    fontFamily: ({style}) => getStyle(style).about.subtitle.fontFamily,
+    fontSize: ({style}) => getStyle(style).about.subtitle.fontSize,
     textAlign: 'center',
   }
 })

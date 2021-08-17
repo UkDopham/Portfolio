@@ -5,6 +5,7 @@ import { Contact } from "./components/contact/contact";
 import { Project } from "./components/project/project";
 import { useStyles } from "./App.styles";
 import { Box } from "@material-ui/core";
+import { Suboptions } from "./components/suboptions/suboptions";
 
 export enum Style {
   apple,
@@ -31,6 +32,10 @@ export const App = () => {
     <Box>
       <Options onClickLanguage={onClickLanguage}
       onClickStyle={onClickStyle}
+      language={language}
+      style={styles}/>
+
+      <Suboptions 
       language={language}
       style={styles}/>
 

@@ -12,7 +12,7 @@ export const useStyles = makeStyles<Theme, StyleProps>(theme => //cursive
   {
     Box: {
       display: 'flex',
-      flexDirection: 'row-reverse',
+      flexDirection: ({style}) => getStyle(style).options.flexDirection,
       alignItems : 'center',
       height:'6vh',
       backgroundColor: ({style}) => getStyle(style).options.backgroundColor,
