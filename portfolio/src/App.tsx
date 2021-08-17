@@ -7,8 +7,8 @@ import { useStyles } from "./App.styles";
 import { Box } from "@material-ui/core";
 
 export enum Style {
-  normal,
-  pixel,
+  apple,
+  netflix,
 }
 export enum Language {
   french,
@@ -16,7 +16,7 @@ export enum Language {
 }
 
 export const App = () => {
-  const [styles, setStyles] = React.useState<Style>(Style.normal);
+  const [styles, setStyles] = React.useState<Style>(Style.apple);
   const [language, setLanguage] = React.useState<Language>(Language.french);
   const classes = useStyles(styles);
 
@@ -31,7 +31,8 @@ export const App = () => {
     <Box>
       <Options onClickLanguage={onClickLanguage}
       onClickStyle={onClickStyle}
-      language={language}/>
+      language={language}
+      style={styles}/>
 
       <Box style={{
         height:'70vh',

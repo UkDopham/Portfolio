@@ -1,21 +1,31 @@
 import {Style} from '../../App';
-import { normalStyle } from './style.normal';
-import { pixelStyle } from './style.pixel';
+import { appleStyle } from './style.apple';
+import { microsoftStyle } from './style.netflix';
 
 export interface IStyle {
     about :{
         avatar: string;
         titleFontFamily : string;
+    },
+    options :{
+      backgroundColor : string;
+      button : {
+        avatar : {
+            height : string;
+            width : string;
+        }
+      }
     }
 
 }
 
 export const getStyle = (style:Style) => {
+  console.log(style);
   switch(style){
     default:
-      return normalStyle;
+      return appleStyle;
 
-    case Style.pixel:
-      return pixelStyle;
+    case Style.netflix:
+      return microsoftStyle;
   }
 }
