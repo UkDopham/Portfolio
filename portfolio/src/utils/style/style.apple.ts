@@ -2,14 +2,17 @@ import { IStyle } from './style';
 
 export const appleStyle: IStyle = {
  about:{
-     avatar:'hiking.jpg',
+     avatar:{
+         path:'hiking.jpg',
+         margin:40,
+     },
      title:{
          fontFamily:'SF Pro Text',
-         fontSize:'32px',
+         fontSize:'52px',
      },
      subtitle:{
          fontFamily:'SF Pro Rounded',
-         fontSize:'22px',
+         fontSize:'32px',
      },
  },
  options:{
@@ -25,5 +28,25 @@ export const appleStyle: IStyle = {
  suboptions:{
      backgroundColor:'#f6f5f7',
      visibility:'visible',
- }
+ },
+ project:{
+     height:'80vh',
+     backgroundColor:'#fafafa',
+     title :{
+         color :'black',
+         fontSize :'52px',
+         fontFamily:'SF Pro Text',
+         margin:5,
+     },
+     subtitle:{
+        color :'#4ca7df',
+        fontSize :'15px',
+        fontFamily:'SF Pro Text',
+        margin:5,
+     },
+     projectlist:{
+        width:'60%',
+        direction:'row',
+     }
+ } 
 }

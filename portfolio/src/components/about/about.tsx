@@ -14,7 +14,7 @@ type Props = {
 export const About = (props: Props) => {
   const language = props.language;
   const style = props.style;
-  const classes = useStyles(style);
+  const classes = useStyles({style: style});
 
   return (
     <Box className={classes.box}>
@@ -22,7 +22,7 @@ export const About = (props: Props) => {
         subtitle={getTranslation(language).about.subtitle}
         style={style} />
 
-      <Avatar src={getStyle(style).about.avatar} className={classes.avatar}/>
+      <Avatar src={getStyle(style).about.avatar.path} className={classes.avatar}/>
     </Box>
   );
 }

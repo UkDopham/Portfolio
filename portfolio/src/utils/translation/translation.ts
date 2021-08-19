@@ -14,6 +14,10 @@ export interface Translation {
   suboptions:{
     link:string;
     message:string;
+  },
+  projet: {
+    title: string;
+    subtitle : string;
   }
 }
 

@@ -1,16 +1,20 @@
 import { Translation } from './translation';
 
 export const enTranslation: Translation = {
-    buttons:{
-        normal:'Classic',
-        pixel:'Pixel',
+    buttons: {
+        normal: 'Classic',
+        pixel: 'Pixel',
     },
-    about:{
-        title: 'Full-Stack Developer',
-        subtitle : 'Alexandre DO PHAM\'s Portfolio.'
+    about: {
+        title: 'Hello, it\s Alex !',
+        subtitle: 'I am a full stack developer.'
     },
-    suboptions:{
-        link:'Here my linkedin profil',
-        message:'if you want to know more about me.',
-      }
+    suboptions: {
+        link: 'My linkedin profil',
+        message: 'if you want to know more about me.',
+    },
+    projet: {
+        title: 'My projects !',
+        subtitle: 'Projects I\'ve worked on.',
+    }
 }

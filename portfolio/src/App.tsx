@@ -40,11 +40,11 @@ export const App = () => {
       style={styles}/>
 
       <Box style={{
-        height:'70vh',
+        height:'90vh',
         overflow: 'scroll'}}>
           <About language={language} style={styles}/>
-          <Contact />
-          <Project />
+          <Project language={language} style={styles}/>
+          <Contact language={language} style={styles}/>
       </Box>
     </Box>
   );

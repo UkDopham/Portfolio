@@ -2,7 +2,10 @@ import { IStyle } from './style';
 
 export const microsoftStyle: IStyle = {
  about:{
-     avatar:'hiking-pixel.jpg',
+     avatar:{
+         path:'hiking-pixel.jpg',
+         margin:10,
+     },
      title:{
         fontFamily:'impact',
         fontSize:'50px',
@@ -25,5 +28,25 @@ export const microsoftStyle: IStyle = {
  suboptions:{
      backgroundColor:'red',
      visibility:'hidden',
+ },
+ project:{
+     height:'50vh',
+     backgroundColor:'red',
+     title :{
+         color :'pink',
+         fontSize :'23px',
+         fontFamily:'impact',
+         margin:5,
+     },
+     subtitle:{
+        color :'green',
+        fontSize :'16px',
+        fontFamily:'impact',
+        margin:5,
+     },
+     projectlist:{
+        width:'100%',
+        direction:'column',
+     }
  }
 }
