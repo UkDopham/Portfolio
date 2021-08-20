@@ -51,8 +51,15 @@ export interface IStyle {
       margin:number;
     };
     projectlist:{
-      width:string;
-      direction: 'row' | 'row-reverse' | 'column' | 'column-reverse';
+      mt: number;
+      grid : {
+        width:string;
+        direction: 'row' | 'row-reverse' | 'column' | 'column-reverse';
+        margin:string;
+      },
+      griditem: {
+        textalign : string;
+      }
     }
   };
 }

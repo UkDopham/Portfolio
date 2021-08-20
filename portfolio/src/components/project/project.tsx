@@ -20,7 +20,7 @@ export const Project = (props: Props) => {
   return (
     <Box className={classes.box}>
       <Typography className={classes.title}>{getTranslation(language).projet.title}</Typography>
-      <Typography className={classes.subtitle}>{getTranslation(language).projet.subtitle}</Typography>
+      <Typography className={classes.subtitle}><a href={'https://github.com/UkDopham'}>{getTranslation(language).projet.subtitle}</a></Typography>
       <ProjectList style={style}
       language={language}/>
     </Box>
