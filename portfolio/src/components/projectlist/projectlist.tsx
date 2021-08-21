@@ -8,7 +8,7 @@ import { useStyles } from './projectlist.style';
 import { IProject, ProjetItem } from '../projectitem/projectitem';
 
 const projects : IProject[] = [{
-    image:'france.png',
+    image:'projects/gant.png',
     name:'test',
     description:'hello',
     githubLink:'www.google.com'

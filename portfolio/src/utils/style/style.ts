@@ -59,6 +59,14 @@ export interface IStyle {
       },
       griditem: {
         textalign : string;
+        img:{
+          width:string;
+          height:string;
+          margin:string;
+        },
+        typography:{
+          textalign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
+        }
       }
     }
   };

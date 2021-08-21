@@ -13,6 +13,9 @@ export const useStyles = makeStyles<Style, StyleProps>(thme =>
     },
     griditem :{
         textAlign:'center'
+    },
+    typography:{
+        textAlign:'center'
     }
 })
 );

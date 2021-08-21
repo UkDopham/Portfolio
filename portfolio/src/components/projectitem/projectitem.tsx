@@ -25,18 +25,18 @@ export const ProjetItem = (props: Props) => {
     const project = props.project;
     const classes = useStyles({ style: style });
 
-    return (<List>
+    return (<List className={classes.list}>
         <ListItem>
-            <img src={project.image}></img>
+            <img src={project.image} className={classes.img}></img>
         </ListItem>
-        <ListItem>
-            <Typography>{project.name}</Typography>
+        <ListItem className={classes.listitem}>
+            <Typography className={classes.typography}>{project.name}</Typography>
         </ListItem>
-        <ListItem>
-            <Typography>{project.description}</Typography>
+        <ListItem className={classes.listitem}>
+            <Typography className={classes.typography}>{project.description}</Typography>
         </ListItem>
-        <ListItem>
-            <a href={project.githubLink}>Hello</a>
+        <ListItem className={classes.listitem}>
+            <a className={classes.typography} href={project.githubLink}>Hello</a>
         </ListItem>
     </List>
     );

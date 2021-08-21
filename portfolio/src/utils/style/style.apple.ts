@@ -52,7 +52,15 @@ export const appleStyle: IStyle = {
                 margin: 'auto'
             },
             griditem: {
-                textalign: 'center'
+                textalign: 'center',
+                img: {
+                    width: '50%',
+                    height: '50%',
+                    margin: 'auto',
+                },
+                typography: {
+                    textalign: 'center'
+                }
             }
         },
     }

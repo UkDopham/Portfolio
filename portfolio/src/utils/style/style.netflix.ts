@@ -53,8 +53,16 @@ export const microsoftStyle: IStyle = {
                 margin: 'auto'
             },
             griditem: {
-                textalign: 'left'
-            }
+                textalign: 'left',
+                img:{
+                    width:'50%',
+                    height:'50%',
+                    margin:'10'
+                },
+                typography:{
+                    textalign:'center'
+                }
+            },            
         }
     }
 }

@@ -4,15 +4,19 @@ import { getStyle, StyleProps } from '../../utils/style/style';
 
 export const useStyles = makeStyles<Style, StyleProps>(thme =>
 ({
-    grid: {
-        width: ({ style }) => getStyle(style).project.projectlist.grid.width,
-        margin: ({ style }) => getStyle(style).project.projectlist.grid.margin,
-        display:'flex',
-        backgroundColor:'pink',
-        flexDirection: ({ style }) => getStyle(style).project.projectlist.grid.direction
+    list:{
     },
-    griditem :{
-        textAlign:'center'
+    listitem :{
+    },
+    img:{
+        height: ({style}) => getStyle(style).project.projectlist.griditem.img.height,
+        width: ({style}) => getStyle(style).project.projectlist.griditem.img.width,
+        margin:({style}) => getStyle(style).project.projectlist.griditem.img.margin,
+    },
+    typography:{
+        height:'100%',
+        width:'100%',
+        textAlign:({style}) => getStyle(style).project.projectlist.griditem.typography.textalign,
     }
 })
 );
