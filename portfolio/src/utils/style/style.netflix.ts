@@ -53,14 +53,40 @@ export const microsoftStyle: IStyle = {
                 margin: 'auto'
             },
             griditem: {
-                textalign: 'left',
+                textAlign: 'left',
                 img:{
                     width:'50%',
                     height:'50%',
                     margin:'10'
                 },
-                typography:{
-                    textalign:'center'
+                title:{
+                    textAlign:'center',
+                    height:'100%',
+                    width:'100%',
+                    fontFamily:'impact',
+                    fontSize:'43px',
+                    fontWeight: 'bold'
+                },
+                subtitle:{
+                    textAlign:'center',
+                    height:'100%',
+                    width:'100%',
+                    fontFamily:'impact',
+                    fontSize:'22px',
+                },
+                github:{
+                    backgroundColor:'red',
+                    margin:'auto',
+                    borderRadius:'10px',
+                    a:{
+                        backgroundColor:'transparent',
+                        color:'white',
+                        fontFamiliy: 'impact',
+                        fontSize:'12px'
+                    }
+                },
+                divider:{
+                    variant: 'middle'
                 }
             },            
         }

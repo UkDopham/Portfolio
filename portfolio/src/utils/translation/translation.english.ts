@@ -16,5 +16,10 @@ export const enTranslation: Translation = {
     projet: {
         title: 'My projects !',
         subtitle: 'Projects I\'ve worked on.',
+        projectlist:{
+            projectitem:{
+              github:'Project'
+            }
+          }
     }
 }

@@ -3,9 +3,10 @@ import { Title } from '../title/title';
 import { Language, Style } from '../../App';
 import { getTranslation } from '../../utils/translation/translation';
 import { getStyle } from '../../utils/style/style';
-import { List, ListItem, Typography } from '@material-ui/core';
+import { List, ListItem, Typography, Box, Divider } from '@material-ui/core';
 import { useStyles } from './projectitem.style';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 export interface IProject {
     image: string;
     name: string;
@@ -30,13 +31,19 @@ export const ProjetItem = (props: Props) => {
             <img src={project.image} className={classes.img}></img>
         </ListItem>
         <ListItem className={classes.listitem}>
-            <Typography className={classes.typography}>{project.name}</Typography>
+            <Typography className={classes.title}>{project.name}</Typography>
         </ListItem>
         <ListItem className={classes.listitem}>
-            <Typography className={classes.typography}>{project.description}</Typography>
+            <Typography className={classes.subtitle}>{project.description}</Typography>
         </ListItem>
         <ListItem className={classes.listitem}>
-            <a className={classes.typography} href={project.githubLink}>Hello</a>
+            <Box className={classes.button} p={1}>
+                <a className={classes.a} href={project.githubLink}><FontAwesomeIcon className={classes.icon} icon={faCodeBranch}/>{getTranslation(language).projet.projectlist.projectitem.github}</a>
+            </Box>
+        </ListItem>
+        <Divider className={classes.divider} variant={getStyle(style).project.projectlist.griditem.divider.variant} />
+        <ListItem className={classes.listitem}>
+            <Typography className={classes.subtitle}>{project.description}</Typography>
         </ListItem>
     </List>
     );

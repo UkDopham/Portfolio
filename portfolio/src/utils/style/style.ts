@@ -9,16 +9,16 @@ export interface StyleProps {
 export interface IStyle {
   about: {
     avatar: {
-      path : string;
-      margin : number;
+      path: string;
+      margin: number;
     };
-    title : {
+    title: {
       fontFamily: string;
-      fontSize : string;
+      fontSize: string;
     };
-    subtitle : {
+    subtitle: {
       fontFamily: string;
-      fontSize : string;
+      fontSize: string;
     }
   };
   options: {
@@ -31,41 +31,67 @@ export interface IStyle {
       }
     }
   };
-  suboptions :{
+  suboptions: {
     backgroundColor: string;
     visibility: 'visible' | 'hidden' | 'collapse';
   };
-  project :{
-    height : string;
+  project: {
+    height: string;
     backgroundColor: string;
     title: {
       color: string;
-      fontSize : string;
+      fontSize: string;
       fontFamily: string;
-      margin:number;
+      margin: number;
     };
     subtitle: {
       color: string;
-      fontSize : string;
+      fontSize: string;
       fontFamily: string;
-      margin:number;
+      margin: number;
     };
-    projectlist:{
+    projectlist: {
       mt: number;
-      grid : {
-        width:string;
+      grid: {
+        width: string;
         direction: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-        margin:string;
+        margin: string;
       },
       griditem: {
-        textalign : string;
-        img:{
-          width:string;
-          height:string;
-          margin:string;
+        textAlign: string;
+        img: {
+          width: string;
+          height: string;
+          margin: string;
         },
-        typography:{
-          textalign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
+        title: {
+          textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
+          height: string;
+          width: string;
+          fontFamily: string;
+          fontSize: string;
+          fontWeight: 'normal' | 'bold' | 'bolder' | 'lighter';
+        },
+        subtitle: {
+          textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
+          height: string;
+          width: string;
+          fontFamily: string;
+          fontSize: string
+        },
+        github: {
+          backgroundColor: string;
+          margin: string;
+          borderRadius:string;
+          a: {
+            backgroundColor: string;
+            color: string;
+            fontFamiliy:string;
+            fontSize:string;
+          };
+        };
+        divider:{
+          variant: 'inset' | 'middle' | 'fullWidth' 
         }
       }
     }

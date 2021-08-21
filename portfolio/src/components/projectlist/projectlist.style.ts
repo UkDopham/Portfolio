@@ -9,10 +9,10 @@ export const useStyles = makeStyles<Style, StyleProps>(thme =>
         margin: ({ style }) => getStyle(style).project.projectlist.grid.margin,
         display:'flex',
         backgroundColor:'pink',
-        flexDirection: ({ style }) => getStyle(style).project.projectlist.grid.direction
+        flexDirection: ({ style }) => getStyle(style).project.projectlist.grid.direction,
     },
     griditem :{
-        textAlign:'center'
+        textAlign:'center',
     },
     typography:{
         textAlign:'center'

@@ -9,9 +9,9 @@ import { IProject, ProjetItem } from '../projectitem/projectitem';
 
 const projects : IProject[] = [{
     image:'projects/gant.png',
-    name:'test',
-    description:'hello',
-    githubLink:'www.google.com'
+    name:'Gant Ethique & Blockchain',
+    description:'Traçabilité d\'un vêtement à l\'aide de la blockchain.',
+    githubLink:'https://github.com/UkDopham/Traceability_blockchain'
 }];
 type Props = {
     language: Language,

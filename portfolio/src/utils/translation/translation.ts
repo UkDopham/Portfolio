@@ -18,6 +18,11 @@ export interface Translation {
   projet: {
     title: string;
     subtitle : string;
+    projectlist:{
+      projectitem:{
+        github:string
+      }
+    }
   }
 }
 
