@@ -52,39 +52,45 @@ export const appleStyle: IStyle = {
                 margin: 'auto'
             },
             griditem: {
-                textAlign: 'center',
-                img: {
-                    width: '50%',
-                    height: '50%',
-                    margin: 'auto',
+                gridhead: {
+                    textAlign: 'center',
+                    listitem: {
+                        margin: 2
+                    },
+                    height: '45vh',
+                    img: {
+                        width: '50%',
+                        height: '50%',
+                        margin: 'auto',
+                    },
+                    title: {
+                        textAlign: 'center',
+                        height: '100%',
+                        width: '100%',
+                        fontFamily: 'SF Pro Text',
+                        fontSize: '18px',
+                        fontWeight: 'bold'
+                    },
+                    subtitle: {
+                        textAlign: 'center',
+                        height: '100%',
+                        width: '100%',
+                        fontFamily: 'SF Pro Rounded',
+                        fontSize: '15px',
+                    },
+                    link: {
+                        backgroundColor: '#0271e3',
+                        margin: 'auto',
+                        borderRadius: '10px',
+                        a: {
+                            backgroundColor: 'transparent',
+                            color: 'white',
+                            fontFamiliy: 'SF Pro Rounded',
+                            fontSize: '13px',
+                        }
+                    },
                 },
-                title:{
-                    textAlign:'center',
-                    height:'100%',
-                    width:'100%',
-                    fontFamily:'SF Pro Text',
-                    fontSize:'18px',
-                    fontWeight: 'bold'
-                },
-                subtitle:{
-                    textAlign:'center',
-                    height:'100%',
-                    width:'100%',
-                    fontFamily:'SF Pro Rounded',
-                    fontSize:'15px',
-                },
-                github:{
-                    backgroundColor:'#0271e3',
-                    margin:'auto',
-                    borderRadius:'10px',
-                    a:{
-                        backgroundColor:'transparent',
-                        color:'white',
-                        fontFamiliy: 'SF Pro Rounded',
-                        fontSize:'13px',
-                    }
-                },
-                divider:{
+                divider: {
                     variant: 'middle'
                 }
             }

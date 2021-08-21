@@ -58,36 +58,42 @@ export interface IStyle {
         margin: string;
       },
       griditem: {
-        textAlign: string;
-        img: {
-          width: string;
+        gridhead:{
+          textAlign: string;
+          listitem:{
+            margin:string | number;
+          };
           height: string;
-          margin: string;
-        },
-        title: {
-          textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
-          height: string;
-          width: string;
-          fontFamily: string;
-          fontSize: string;
-          fontWeight: 'normal' | 'bold' | 'bolder' | 'lighter';
-        },
-        subtitle: {
-          textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
-          height: string;
-          width: string;
-          fontFamily: string;
-          fontSize: string
-        },
-        github: {
-          backgroundColor: string;
-          margin: string;
-          borderRadius:string;
-          a: {
+          img: {
+            width: string;
+            height: string;
+            margin: string;
+          },
+          title: {
+            textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
+            height: string;
+            width: string;
+            fontFamily: string;
+            fontSize: string;
+            fontWeight: 'normal' | 'bold' | 'bolder' | 'lighter';
+          },
+          subtitle: {
+            textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
+            height: string;
+            width: string;
+            fontFamily: string;
+            fontSize: string
+          },
+          link: {
             backgroundColor: string;
-            color: string;
-            fontFamiliy:string;
-            fontSize:string;
+            margin: string;
+            borderRadius:string;
+            a: {
+              backgroundColor: string;
+              color: string;
+              fontFamiliy:string;
+              fontSize:string;
+            };
           };
         };
         divider:{
