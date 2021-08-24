@@ -10,11 +10,11 @@ export const projects = {
         link: 'https://github.com/UkDopham/Traceability_blockchain',
         icon: faCodeBranch,
         projectDetails: [{
-            image: 'france.png',
+            icon: faYoutube,
             text: 'france.png'
         },
         {
-            image: 'france.png',
+            icon: faYoutube,
             text: 'hiking.jpg',
         },]
     },
@@ -25,7 +25,7 @@ export const projects = {
         link: 'https://www.youtube.com/watch?v=TE-Unb53eGI',
         icon: faYoutube,
         projectDetails: [{
-            image: 'france.png',
+            icon: faYoutube,
             text: 'hiking.png'
         }]
     }

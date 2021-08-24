@@ -58,10 +58,10 @@ export interface IStyle {
         margin: string;
       },
       griditem: {
-        gridhead:{
+        gridhead: {
           textAlign: string;
-          listitem:{
-            margin:string | number;
+          listitem: {
+            margin: string | number;
           };
           height: string;
           img: {
@@ -87,17 +87,32 @@ export interface IStyle {
           link: {
             backgroundColor: string;
             margin: string;
-            borderRadius:string;
+            borderRadius: string;
             a: {
               backgroundColor: string;
               color: string;
-              fontFamiliy:string;
-              fontSize:string;
+              fontFamiliy: string;
+              fontSize: string;
             };
           };
         };
-        divider:{
-          variant: 'inset' | 'middle' | 'fullWidth' 
+        divider: {
+          variant: 'inset' | 'middle' | 'fullWidth'
+        };
+        projectDetail: {
+          list: {
+            margin: string;
+          };
+          icon: {
+            iconSize : string | number;
+            margin: string;
+          };
+          typography: {
+            textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
+            margin: string;
+            fontFamily: string;
+            fontSize: string | number;
+          }
         }
       }
     }

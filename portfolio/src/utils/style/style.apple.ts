@@ -92,6 +92,21 @@ export const appleStyle: IStyle = {
                 },
                 divider: {
                     variant: 'middle'
+                },
+                projectDetail: {
+                    list: {
+                        margin: 'auto',
+                    },
+                    icon: {
+                        iconSize :40,
+                        margin: 'auto',
+                    },
+                    typography: {
+                        textAlign: 'center',
+                        margin: 'auto',
+                        fontFamily: 'SF Pro Rounded',
+                        fontSize: '25'
+                    }
                 }
             }
         },

@@ -5,9 +5,11 @@ import { getTranslation } from '../../utils/translation/translation';
 import { getStyle } from '../../utils/style/style';
 import { Avatar, Box, Typography, List, ListItem } from '@material-ui/core';
 import {useStyles} from './projectdetail.style';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 export interface IProjectDetail {
-  image: string;
+  icon: IconDefinition;
   text:string;
 }
 
@@ -25,7 +27,7 @@ export const ProjectDetail = (props: Props) => {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listitem}>
-        <img className={classes.image} src={projectDetail.image}/>
+        <FontAwesomeIcon className={classes.icon} icon={projectDetail.icon} />
       </ListItem>
       <ListItem>
         <Typography className={classes.typography}>{projectDetail.text}</Typography>

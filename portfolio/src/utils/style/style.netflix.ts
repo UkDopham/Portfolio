@@ -93,6 +93,21 @@ export const microsoftStyle: IStyle = {
                 },
                 divider: {
                     variant: 'middle'
+                },
+                projectDetail: {
+                    list: {
+                        margin: 'auto',
+                    },
+                    icon: {
+                        iconSize : 40,
+                        margin: 'auto',
+                    },
+                    typography: {
+                        textAlign: 'center',
+                        margin: 'auto',
+                        fontFamily: 'impact',
+                        fontSize: '25'
+                    }
                 }
             },
         }

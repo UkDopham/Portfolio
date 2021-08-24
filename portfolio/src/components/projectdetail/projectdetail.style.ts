@@ -5,18 +5,19 @@ import { getStyle, StyleProps} from '../../utils/style/style';
 export const useStyles = makeStyles<Style, StyleProps>(thme =>
   ({
       list:{
-        margin : 'auto',
+        margin : ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.list.margin
       },
       listitem:{
       },
-      image:{
-        height : '30%',
-        width : '30%',
-        margin : 'auto',
+      icon:{
+        margin : ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.icon.margin,
+        fontSize: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.icon.iconSize,
       },
       typography:{
-        textAlign:'center',
-        margin : 'auto',
+        textAlign:({style}) => getStyle(style).project.projectlist.griditem.projectDetail.typography.textAlign,
+        margin : ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.typography.margin,
+        fontFamily: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.typography.fontFamily,
+        fontSize: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.typography.fontSize
       }
   })
 );
