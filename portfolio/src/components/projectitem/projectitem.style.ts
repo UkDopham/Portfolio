@@ -7,7 +7,8 @@ export const useStyles = makeStyles<Style, StyleProps>(thme =>
     list: {
     },
     divider: {
-
+    },
+    listitem: {
     },
 })
 );

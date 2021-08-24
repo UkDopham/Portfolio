@@ -8,6 +8,8 @@ import { useStyles } from './projectitem.style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { ProjectHead } from '../projecthead/projecthead';
+import { ProjectDetail } from '../projectdetail/projectdetail';
+import { IProjectDetail } from '../projectdetail/projectdetail';
 
 export interface IProject {
     image: string;
@@ -15,6 +17,7 @@ export interface IProject {
     description: string;
     link: string;
     icon: IconDefinition;
+    projectDetails : IProjectDetail[]
 }
 
 type Props = {
@@ -27,6 +30,7 @@ export const ProjetItem = (props: Props) => {
     const language = props.language;
     const style = props.style;
     const project = props.project;
+    const projectDetails = props.project.projectDetails;
     const classes = useStyles({ style: style });
 
     return (
@@ -35,9 +39,10 @@ export const ProjetItem = (props: Props) => {
                     <ProjectHead language={language} style={style} project={project}/>
                 </ListItem>
                 <Divider className={classes.divider} variant={getStyle(style).project.projectlist.griditem.divider.variant} />
+                {projectDetails.map(x => 
                 <ListItem className={classes.listitem}>
-                    <Typography className={classes.subtitle}>{project.description}</Typography>
-                </ListItem>
+                    <ProjectDetail style={style} projectDetail={x}/>
+                </ListItem>)}
             </List>
     );
 }
