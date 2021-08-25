@@ -32,11 +32,6 @@ export const ProjectHead = (props: Props) => {
                 <ListItem className={classes.listitem}>
                     <Typography className={classes.subtitle}>{project.description}</Typography>
                 </ListItem>
-                <ListItem className={classes.listitem}>
-                    <Box className={classes.button} p={1}>
-                        <a className={classes.a} href={project.link}><FontAwesomeIcon className={classes.icon} icon={project.icon} />{getTranslation(language).projet.projectlist.projectitem.github}</a>
-                    </Box>
-                </ListItem>
             </List>
     </Box>
   );

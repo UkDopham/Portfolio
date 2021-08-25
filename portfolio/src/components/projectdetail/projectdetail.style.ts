@@ -13,11 +13,19 @@ export const useStyles = makeStyles<Style, StyleProps>(thme =>
         margin : ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.icon.margin,
         fontSize: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.icon.iconSize,
       },
-      typography:{
-        textAlign:({style}) => getStyle(style).project.projectlist.griditem.projectDetail.typography.textAlign,
-        margin : ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.typography.margin,
-        fontFamily: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.typography.fontFamily,
-        fontSize: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.typography.fontSize
+      text:{
+        textAlign:({style}) => getStyle(style).project.projectlist.griditem.projectDetail.text.textAlign,
+        margin : ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.text.margin,
+        fontFamily: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.text.fontFamily,
+        fontSize: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.text.fontSize,
+        color :  ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.text.color,  
+      },
+      subtext:{
+        textAlign:({style}) => getStyle(style).project.projectlist.griditem.projectDetail.subtext.textAlign,
+        margin : ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.subtext.margin,
+        fontFamily: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.subtext.fontFamily,
+        fontSize: ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.subtext.fontSize,
+        color :  ({style}) => getStyle(style).project.projectlist.griditem.projectDetail.subtext.color,  
       }
   })
 );

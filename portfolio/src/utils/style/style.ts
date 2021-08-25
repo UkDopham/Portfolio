@@ -107,11 +107,19 @@ export interface IStyle {
             iconSize : string | number;
             margin: string;
           };
-          typography: {
+          text: {
             textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
             margin: string;
             fontFamily: string;
             fontSize: string | number;
+            color: string;
+          },
+          subtext: {
+            textAlign: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
+            margin: string;
+            fontFamily: string;
+            fontSize: string | number;
+            color: string;
           }
         }
       }

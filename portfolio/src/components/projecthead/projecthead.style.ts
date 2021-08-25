@@ -30,22 +30,6 @@ export const useStyles = makeStyles<Style, StyleProps>(thme =>
           fontFamily: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.subtitle.fontFamily,
           fontSize: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.subtitle.fontSize,
       },
-      button: {
-          backgroundColor: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.link.backgroundColor,
-          margin: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.link.margin,
-          borderRadius: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.link.borderRadius,
-      },
-      a: {
-          backgroundColor: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.link.a.backgroundColor,
-          color: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.link.a.color,
-          fontFamily: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.link.a.fontFamiliy,
-          fontSize: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.link.a.fontSize,
-          textDecoration: 'none',
-      },
-      icon:{
-          marginLeft:5,
-          marginRight:5
-      }
   })
 );
 

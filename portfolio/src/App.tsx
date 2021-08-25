@@ -15,6 +15,11 @@ export enum Language {
   french,
   english,
 }
+export enum Projects {
+  gant,
+  cielu,
+  image
+}
 
 export const App = () => {
   const [styles, setStyles] = React.useState<Style>(Style.apple);

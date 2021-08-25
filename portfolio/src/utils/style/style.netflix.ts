@@ -102,11 +102,19 @@ export const microsoftStyle: IStyle = {
                         iconSize : 40,
                         margin: 'auto',
                     },
-                    typography: {
+                    text: {
                         textAlign: 'center',
                         margin: 'auto',
                         fontFamily: 'impact',
-                        fontSize: '25'
+                        fontSize: '25',
+                        color: 'red'
+                    },
+                    subtext: {
+                        textAlign: 'center',
+                        margin: 'auto',
+                        fontFamily: 'impact',
+                        fontSize: '25',
+                        color :'red'
                     }
                 }
             },

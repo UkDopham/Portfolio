@@ -38,6 +38,11 @@ export const ProjetItem = (props: Props) => {
                 <ListItem>
                     <ProjectHead language={language} style={style} project={project}/>
                 </ListItem>
+                <ListItem className={classes.listitem}>
+                    <Box className={classes.button} p={1}>
+                        <a className={classes.a} href={project.link}><FontAwesomeIcon className={classes.icon} icon={project.icon} />{getTranslation(language).projet.projectlist.projectitem.github}</a>
+                    </Box>
+                </ListItem>
                 <Divider className={classes.divider} variant={getStyle(style).project.projectlist.griditem.divider.variant} />
                 {projectDetails.map(x => 
                 <ListItem className={classes.listitem}>

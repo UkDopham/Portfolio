@@ -8,7 +8,6 @@ export const useStyles = makeStyles<Style, StyleProps>(thme =>
         width: ({ style }) => getStyle(style).project.projectlist.grid.width,
         margin: ({ style }) => getStyle(style).project.projectlist.grid.margin,
         display:'flex',
-        backgroundColor:'pink',
         flexDirection: ({ style }) => getStyle(style).project.projectlist.grid.direction,
     },
     griditem :{

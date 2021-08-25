@@ -57,7 +57,7 @@ export const appleStyle: IStyle = {
                     listitem: {
                         margin: 2
                     },
-                    height: '45vh',
+                    height: '35vh',
                     img: {
                         width: '50%',
                         height: '50%',
@@ -101,11 +101,19 @@ export const appleStyle: IStyle = {
                         iconSize :40,
                         margin: 'auto',
                     },
-                    typography: {
+                    text: {
+                        textAlign: 'center',
+                        margin: 'auto',
+                        fontFamily: 'SF Pro Text',
+                        fontSize: 18,
+                        color : 'black'
+                    },
+                    subtext: {
                         textAlign: 'center',
                         margin: 'auto',
                         fontFamily: 'SF Pro Rounded',
-                        fontSize: '25'
+                        fontSize: 15,
+                        color : '#96969b'
                     }
                 }
             }
