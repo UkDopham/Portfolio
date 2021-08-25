@@ -10,6 +10,8 @@ export const useStyles = makeStyles<Style, StyleProps>(thme =>
         display:'flex',
         flexDirection: ({ style }) => getStyle(style).project.projectlist.grid.direction,
     },
+    box :{
+    },
     griditem :{
         textAlign:'center',
     },

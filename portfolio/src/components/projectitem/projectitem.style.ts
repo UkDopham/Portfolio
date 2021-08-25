@@ -7,6 +7,7 @@ export const useStyles = makeStyles<Style, StyleProps>(thme =>
     list: {
     },
     divider: {
+        marginTop: 10,
     },
     listitem: {
     },
@@ -22,9 +23,9 @@ export const useStyles = makeStyles<Style, StyleProps>(thme =>
         fontSize: ({ style }) => getStyle(style).project.projectlist.griditem.gridhead.link.a.fontSize,
         textDecoration: 'none',
     },
-    icon:{
-        marginLeft:5,
-        marginRight:5
+    icon: {
+        marginLeft: 5,
+        marginRight: 5
     }
 })
 );

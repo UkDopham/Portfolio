@@ -36,7 +36,7 @@ export interface IStyle {
     visibility: 'visible' | 'hidden' | 'collapse';
   };
   project: {
-    height: string;
+    height: string | number;
     backgroundColor: string;
     title: {
       color: string;
@@ -63,7 +63,7 @@ export interface IStyle {
           listitem: {
             margin: string | number;
           };
-          height: string;
+          height: string | number;
           img: {
             width: string;
             height: string;

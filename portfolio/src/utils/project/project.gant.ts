@@ -10,31 +10,32 @@ export const gantProject = (language: Language) => {
         description: getTranslation(language).projects.gant.description,
         link: 'https://github.com/UkDopham/Traceability_blockchain',
         icon: faCodeBranch,
-        projectDetails: [{
-            icon: faLink,
-            text: getTranslation(language).projects.gant.projectDetails.hyperledger.text,
-            subtext: getTranslation(language).projects.gant.projectDetails.hyperledger.subtext,
-        },
-        {
-            icon: faJs,
-            text: getTranslation(language).projects.gant.projectDetails.js.text,
-            subtext: getTranslation(language).projects.gant.projectDetails.js.subtext,
-        },
-        {
-            icon: faAward,
-            text: getTranslation(language).projects.gant.projectDetails.award.text,
-            subtext: getTranslation(language).projects.gant.projectDetails.award.subtext,
-        },
-        {
-            icon: faUsers,
-            text: getTranslation(language).projects.gant.projectDetails.users.text,
-            subtext: getTranslation(language).projects.gant.projectDetails.users.subtext,
-        },
-        {
-            icon: faLayerGroup,
-            text: getTranslation(language).projects.image.projectDetails.fullstack.text,
-            subtext: getTranslation(language).projects.image.projectDetails.fullstack.subtext,
-        },
+        projectDetails: [
+            {
+                icon: faLayerGroup,
+                text: getTranslation(language).projects.image.projectDetails.fullstack.text,
+                subtext: getTranslation(language).projects.image.projectDetails.fullstack.subtext,
+            },
+            {
+                icon: faJs,
+                text: getTranslation(language).projects.gant.projectDetails.js.text,
+                subtext: getTranslation(language).projects.gant.projectDetails.js.subtext,
+            },
+            {
+                icon: faLink,
+                text: getTranslation(language).projects.gant.projectDetails.hyperledger.text,
+                subtext: getTranslation(language).projects.gant.projectDetails.hyperledger.subtext,
+            },
+            {
+                icon: faAward,
+                text: getTranslation(language).projects.gant.projectDetails.award.text,
+                subtext: getTranslation(language).projects.gant.projectDetails.award.subtext,
+            },
+            {
+                icon: faUsers,
+                text: getTranslation(language).projects.gant.projectDetails.users.text,
+                subtext: getTranslation(language).projects.gant.projectDetails.users.subtext,
+            },
         ]
     }
     )

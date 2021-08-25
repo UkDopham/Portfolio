@@ -19,7 +19,7 @@ export const ProjectList = (props: Props) => {
     const classes = useStyles({ style: style });
 
     return (
-        <Box mt={getStyle(style).project.projectlist.mt}>
+        <Box mt={getStyle(style).project.projectlist.mt} className={classes.box}>
             <Grid container className={classes.grid} >
                 <Grid item xs={4} className={classes.griditem}>
                     <ProjetItem language={language} style={style} project={getProject(language, Projects.gant)} />

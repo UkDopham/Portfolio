@@ -5,7 +5,6 @@ import { getStyle, StyleProps } from '../../utils/style/style';
 export const useStyles = makeStyles<Style, StyleProps>(thme =>
 ({
   box: {
-    height: ({ style }) => getStyle(style).project.height,
     backgroundColor: ({ style }) => getStyle(style).project.backgroundColor,
   },
   title: {

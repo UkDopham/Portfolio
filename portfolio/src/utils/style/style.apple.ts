@@ -57,7 +57,7 @@ export const appleStyle: IStyle = {
                     listitem: {
                         margin: 2
                     },
-                    height: '35vh',
+                    height: 300,
                     img: {
                         width: '50%',
                         height: '50%',
