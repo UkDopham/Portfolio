@@ -118,5 +118,21 @@ export const appleStyle: IStyle = {
                 }
             }
         },
+    },
+    featurebar: {
+        backgroundColor: '#f9f9fa',
+        flexDirection: 'row',
+        height: '10vh',
+        width: '60%',
+        button: {
+            typography: {
+                fontFamiliy: 'SF Pro Rounded',
+                fontSize: 11,
+                color: 'black'
+            },
+            icon :{
+                fontSize: 30,
+            }
+        }
     }
 }

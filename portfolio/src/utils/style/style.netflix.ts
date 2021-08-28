@@ -1,7 +1,7 @@
 import { IStyle } from './style';
 import { Box } from '@material-ui/core';
 
-export const microsoftStyle: IStyle = {
+export const netflixStyle: IStyle = {
     about: {
         avatar: {
             path: 'hiking-pixel.jpg',
@@ -99,7 +99,7 @@ export const microsoftStyle: IStyle = {
                         margin: 'auto',
                     },
                     icon: {
-                        iconSize : 40,
+                        iconSize: 40,
                         margin: 'auto',
                     },
                     text: {
@@ -114,10 +114,26 @@ export const microsoftStyle: IStyle = {
                         margin: 'auto',
                         fontFamily: 'impact',
                         fontSize: '25',
-                        color :'red'
+                        color: 'red'
                     }
                 }
             },
+        }
+    },
+    featurebar: {
+        backgroundColor: '#f9f9fa',
+        flexDirection: 'row',
+        height: '10vh',
+        width : '80%',
+        button: {
+            typography: {
+                fontFamiliy: 'impact',
+                fontSize: 34,
+                color: 'black'
+            },
+            icon :{
+                fontSize: 14,
+            }
         }
     }
 }

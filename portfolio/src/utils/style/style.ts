@@ -1,6 +1,6 @@
 import { Style } from '../../App';
 import { appleStyle } from './style.apple';
-import { microsoftStyle } from './style.netflix';
+import { netflixStyle } from './style.netflix';
 
 export interface StyleProps {
   style: Style;
@@ -104,7 +104,7 @@ export interface IStyle {
             margin: string;
           };
           icon: {
-            iconSize : string | number;
+            iconSize: string | number;
             margin: string;
           };
           text: {
@@ -125,6 +125,22 @@ export interface IStyle {
       }
     }
   };
+  featurebar: {
+    backgroundColor: string;
+    flexDirection: 'row' | 'row-reverse' | 'column' | 'column-reverse' | 'initial' | 'inherit';
+    height: string | number;
+    width : string | number;
+    button: {
+      typography: {
+        fontFamiliy: string;
+        fontSize: string | number;
+        color: string;
+      };
+      icon:{
+        fontSize: string | number;
+      }
+    }
+  }
 }
 
 export const getStyle = (style: Style) => {
@@ -134,6 +150,6 @@ export const getStyle = (style: Style) => {
       return appleStyle;
 
     case Style.netflix:
-      return microsoftStyle;
+      return netflixStyle;
   }
 }
