@@ -1,61 +1,67 @@
-import { Feature } from "../../App";
-import { faCodeBranch, faUsers, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { Feature, Language } from "../../App";
+import { faCodeBranch, faUsers, IconDefinition, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faReact, faMicrosoft, faJs, faUnity, faCss3, faJira } from '@fortawesome/free-brands-svg-icons';
+import { getTranslation } from '../translation/translation';
 
 export interface IFeature {
     text: string;
     icon: IconDefinition;
 }
-export const getFeature = (feature: Feature) => {
-    console.log(feature);
+export const getFeature = (feature: Feature, language: Language) => {
     switch (feature) {
         default:
             return {
-                text: 'agile',
+                text: getTranslation(language).featurebar.agile,
                 icon: faUsers,
             };
 
         case Feature.csshtml:
             return {
-                text: 'HTML & CSS',
+                text: getTranslation(language).featurebar.csshtml,
                 icon: faCss3,
             };
 
         case Feature.dotnet:
             return {
-                text: '.Net',
+                text: getTranslation(language).featurebar.dotnet,
                 icon: faMicrosoft,
             };
 
         case Feature.react:
             return {
-                text: 'React',
+                text: getTranslation(language).featurebar.react,
                 icon: faReact,
             };
 
         case Feature.typescript:
             return {
-                text: 'JS & Typescript',
+                text: getTranslation(language).featurebar.typescript,
                 icon: faJs,
             };
 
         case Feature.unity:
             return {
-                text: 'Unity',
+                text: getTranslation(language).featurebar.unity,
                 icon: faUnity,
             };
 
         case Feature.git:
             return {
-                text: 'git',
+                text: getTranslation(language).featurebar.git,
                 icon: faCodeBranch,
             };
 
         case Feature.jira:
             return {
-                text: 'Jira',
+                text: getTranslation(language).featurebar.jira,
                 icon: faJira,
             };
+
+        case Feature.mobile:
+            return {
+                text: getTranslation(language).featurebar.mobile,
+                icon: faMobileAlt,
+            }
 
     }
 }

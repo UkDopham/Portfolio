@@ -29,7 +29,8 @@ export enum Feature {
   agile,
   typescript,  
   git,
-  jira
+  jira,
+  mobile,
 }
 
 export const App = () => {

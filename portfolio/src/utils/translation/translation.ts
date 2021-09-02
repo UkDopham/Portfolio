@@ -84,6 +84,17 @@ export interface Translation {
       }
 
     }
+  };
+  featurebar:{
+    agile:string;
+    csshtml:string;
+    dotnet:string;
+    react:string;
+    typescript:string;
+    unity:string;
+    git:string;
+    jira:string;
+    mobile:string;
   }
 }
 

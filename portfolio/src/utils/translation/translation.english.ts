@@ -81,5 +81,16 @@ export const enTranslation: Translation = {
                 }
             }
         }
+    },
+    featurebar:{
+        agile:'agile',
+        csshtml:'CSS & HTML',
+        dotnet: '.Net',
+        react: 'React',
+        typescript: 'Typescript & Javascript',
+        unity :'Unity',
+        git: 'git',
+        jira: 'Jira',
+        mobile: 'Mobile developpment'
     }
 }

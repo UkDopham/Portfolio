@@ -13,6 +13,7 @@ type Props = {
 }
 export const Featurebar = (props: Props) => {
     const classes = useStyles({ style: props.style });
+    const language = props.language;
     const featureList = [Feature.agile,
     Feature.csshtml,
     Feature.dotnet,
@@ -21,6 +22,7 @@ export const Featurebar = (props: Props) => {
     Feature.react,
     Feature.typescript,
     Feature.unity,
+    Feature.mobile,
     ];
     return (
         <Box className={classes.box}>
@@ -29,8 +31,8 @@ export const Featurebar = (props: Props) => {
                     <Button onClick={() => props.onClickFeature(Feature.dotnet)}
                         className={classes.button}>
                         <Box>
-                            <FontAwesomeIcon className={classes.icon} icon={getFeature(x).icon} />
-                            <Typography className={classes.typography}>{getFeature(x).text}</Typography>
+                            <FontAwesomeIcon className={classes.icon} icon={getFeature(x, language).icon} />
+                            <Typography className={classes.typography}>{getFeature(x, language).text}</Typography>
                         </Box>
                     </Button>
                 )}
